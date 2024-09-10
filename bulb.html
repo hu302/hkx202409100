@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灯泡0120230436</title>
+</head>
+<body>
+<p>点击灯泡可以实现打开和关闭功能</p>
+    <img id="myimage" onclick="changeImage()" src='bulb/pic2.jpg' width="100" height="180">
+    <script>
+        function changeImage(){
+            const element = document.getElementById("myimage")//获取图像元素给element
+            if(element.src.endsWith("bulb/pic2.jpg")){//判断灯泡关闭状态
+                element.src = "bulb/pic1.jpg"
+            }else{
+                element.src = "bulb/pic2.jpg"
+            }
+        }
+    </script>
+</body>
+</html>
